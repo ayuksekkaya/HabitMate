@@ -5,6 +5,21 @@ const UserSchema = new mongoose.Schema({
     username: String,
     password: String,
     name: String,
+    zipcode: String,
+
+    friends : [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        }
+    ],
+
+    activities: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Activity"
+        }
+    ]
 });
 
 //passport-local-mongoose

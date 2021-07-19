@@ -1,0 +1,162 @@
+[
+  {
+    username: 'Cristopher_Bode49',
+    name: 'Vince Kautzer',
+    zipcode: '01417-8864',
+    password: 'Grhj4yq9SiTYLg7',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Danika_Bogisich11',
+    name: 'Timmothy Gerlach',
+    zipcode: '07877-9135',
+    password: 'i5oOnjXYtaAatrq',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Zora.Orn66',
+    name: 'Addie Klein',
+    zipcode: '14955-9130',
+    password: 'd4QOOfHF7OZRGlB',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Jamel_Schaefer48',
+    name: 'Dahlia Nienow',
+    zipcode: '34750-4282',
+    password: 'KvBX6gfgQEZbSA_',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Freeda67',
+    name: 'Frederic Muller',
+    zipcode: '14568-1373',
+    password: 'KIIsN3Huu6GfOB0',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Lula_Kirlin',
+    name: 'Electa Graham',
+    zipcode: '33801',
+    password: 'P8VETfqch0zzJbp',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Zella.Daugherty84',
+    name: 'Jeromy Morissette',
+    zipcode: '59207',
+    password: 'WVu0UCM1P6ii0_Z',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Magnolia3',
+    name: 'Ken Abshire',
+    zipcode: '53608-9872',
+    password: 'hQy9SuhYuj_vgrH',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Conrad_Gorczany23',
+    name: 'Kenna Rice',
+    zipcode: '57011-9326',
+    password: 'K4fGRQ8YBaV3Wx5',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Lawson.Schmidt',
+    name: 'Santa Stanton',
+    zipcode: '37603',
+    password: '5r0qV0dTEHujKGA',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Michael_Hoeger38',
+    name: 'Amparo Toy',
+    zipcode: '05573',
+    password: 'kQLHIMf0_SCQQji',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Rodger.Swift33',
+    name: 'Jada Becker',
+    zipcode: '97409',
+    password: 'KDEW_dCbXWB7M39',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Jefferey_Brekke36',
+    name: 'Waylon Smith',
+    zipcode: '34385',
+    password: 'zty1sCZSVqWShS5',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Arne.Borer41',
+    name: 'Zachariah Nader',
+    zipcode: '90895',
+    password: 'mxRbU9Hlk1wNrI8',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Shannon_Kirlin',
+    name: 'Henderson Ruecker',
+    zipcode: '51616-5103',
+    password: '9BkFUOS9GSlkpDM',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Marquise.Bruen31',
+    name: 'Emely Ruecker',
+    zipcode: '49655',
+    password: 'xwv2bMKcGbQmKz5',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Garret.Sawayn57',
+    name: 'Bernard Wunsch',
+    zipcode: '26847',
+    password: 'rRuPptgDdUAjnyb',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Malika_Bradtke',
+    name: 'Maymie Miller',
+    zipcode: '26438-6323',
+    password: 'DB331cYdcVTCb6R',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Kraig16',
+    name: 'Mac Murphy',
+    zipcode: '88648',
+    password: '_2FKED1OfxZYYaA',
+    friends: [],
+    activites: []
+  },
+  {
+    username: 'Nelson_Schimmel',
+    name: 'Cale Hyatt',
+    zipcode: '61579-4544',
+    password: 'tJcyj0UKFyY87Rg',
+    friends: [],
+    activites: []
+  }
+]

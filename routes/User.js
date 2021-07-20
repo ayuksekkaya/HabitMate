@@ -1,10 +1,17 @@
 const router = require('express').Router();
 const { render } = require('ejs');
-const displayProfile = require('../controllers/User/proflie');
+const User = require('../controllers/User/proflie');
 
 
 
-router.get("/:id/profile", isLoggedIn, displayProfile);
+
+
+// Get the profile page of the user
+router.get("/:id/profile", isLoggedIn, User.displayUser);
+
+
+// Handle searches made throught the serach bar
+router.post('/search' , User.search);
 
 function isLoggedIn(req,res,next) {
     if(req.isAuthenticated()){
@@ -12,5 +19,6 @@ function isLoggedIn(req,res,next) {
     }
     res.redirect("/login");
 }
+
 
 module.exports = router;

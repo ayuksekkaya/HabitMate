@@ -1,0 +1,12 @@
+
+<%- include("../partials/header") -%>
+
+<% if (results) { %>
+    <% results.forEach(function(user) { %>
+        <p> <%= user.username %> </p> 
+    <% }) %>
+<% } %>
+
+
+
+

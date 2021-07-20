@@ -2,6 +2,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <!------ Include the above in your HEAD tag ---------->
 
 </head>
@@ -69,10 +70,27 @@
           Test
         </a>
       </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    </ul> 
+    <form action= '/user/search' class="form-inline my-2 my-lg-0" method= 'POST'>
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name='query'>
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form> -->
+    <form action="/user/search" method="POST" id="searchForm" class="form-inline my-2 my-lg-0">
+      <input type="text" class="form-control mr-sm-2" name="query" placeholder="Search term...">
+        <div class="input-group-btn search-panel">
+            <select name="advanced" id="search_param" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <option value="all">All</option>
+                <option value="username">Username</option>
+                <option value="zipcode">Zipcode</option>
+                <option value="activity">Activity</option>
+            </select>
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> 
+ 
+
+    
   </div>
 </nav>
+
+

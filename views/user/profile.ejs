@@ -2,5 +2,8 @@
 <%- include("../partials/header") -%>
 
 <p> <%= currentUser.username %></p>
-<p> <%= currentUser.friends[0].username %> </p>
+    <% if (currentUser.fiends) { %>
+        <p> <%= currentUser.friends[0].username %> </p>
+    <% } %>
+
 <p> <%= currentUser.activities %> </p>

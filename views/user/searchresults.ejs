@@ -1,11 +1,27 @@
 
 <%- include("../partials/header") -%>
 
+<h1>Search Results</h1>
+
 <% if (results) { %>
     <% results.forEach(function(user) { %>
-        <p> <%= user.username %> </p> 
+        <div>
+            <div style="display: inline-block;"><%= user.username %></div>
+            <div style="display: inline-block;"><a href= "/user/<%=user.id%>/profile" >User's Profile</a></div>
+            <form style="display: inline-block;" action="/user/follow" method="POST" id="searchForm" class="form-inline my-2 my-lg-0">
+                <input type="hidden" name="toBeFollowed" value= "<%= user.id %>" >
+                <button type="submit"> Follow </button>
+            </form> 
+        </div>
     <% }) %>
 <% } %>
+
+<div class="container">
+<div class="row">
+    <div class="col-6">.col-6</div>
+    <div class="col-6">.col-6</div>
+  </div>
+</div>
 
 
 

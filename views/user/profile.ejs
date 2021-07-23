@@ -1,9 +1,16 @@
 
 <%- include("../partials/header") -%>
 
+<h1>Profile Page</h1>
+
+<h2>User name</h2>
 <p> <%= currentUser.username %></p>
-    <% if (currentUser.fiends) { %>
-        <p> <%= currentUser.friends[0].username %> </p>
+    <% if (currentUser.friends.length > 0) { %>
+        <h3>User friends</h3>
+        <div>
+            <div> <%= currentUser.friends[0].username %> <div>
+            <div> <a href="/user/<%=currentUser.friends[0].id%>/send/messages">Message</a></div>
+        </div>
     <% } %>
 
 <p> <%= currentUser.activities %> </p>

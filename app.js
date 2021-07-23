@@ -7,9 +7,8 @@ const AuthRoute = require('./routes/Auth');
 const UserRoute = require('./routes/User');
 const flash = require('flash');
 
+
 const passport = require('passport');
-const LocalStrategy = require('passport-local');
-const passportLocalMongoose = require('passport-local-mongoose');
 const User = require('./Models/user');
 
 

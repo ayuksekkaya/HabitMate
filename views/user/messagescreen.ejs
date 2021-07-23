@@ -1,0 +1,11 @@
+<h1>This is the message sending page</h1>
+
+
+<div>
+    <form action="/user/send/messages" method="POST">
+        <p>Sending A message to <%= user.username %></p>
+        <input type="text" name="text">
+        <input type="hidden" name="receiver" value="<%= user.id%>">
+        <button type="submit">Send</button>
+    </form>
+</div>

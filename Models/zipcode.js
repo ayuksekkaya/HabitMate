@@ -27,7 +27,8 @@ const ZipcodeSchema = new mongoose.Schema({
         index: '2dsphere'
       }
     },
-    formattedAdress: String
+    formattedAdress: String,
+    zipcode: String
 
 });
 
@@ -38,9 +39,14 @@ ZipcodeSchema.pre('save', async function(next)  {
   this.location = {
     type: 'Point',
     coordinates: [loc[0].longitude, loc[0].latitude],
-    formattedAdress: loc[0].formattedAddress
-};
+    formattedAdress: loc[0].formattedAddress,
+    zipcode: loc[0].zipcode
+};  
 
+// Do not save address
+this.address = undefined
+next();
 });
+
 
 module.exports = mongoose.model('Zipcode', ZipcodeSchema);

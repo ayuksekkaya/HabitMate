@@ -87,14 +87,14 @@ function createUsers() {
 
 }
 
-function createFriends(users) {
+function createFriends() {
 
   User.find({}, function(err, users) {
 
     if(!err){
       for (let i = 0; i< users.length; i++) {
-           user1 = users[i];
-           user2 = users[users.length - i - 1];
+           let user1 = users[i];
+           let user2 = users[users.length - i - 1];
            //console.log(user1);
           
            User.findByIdAndUpdate(user1.id, {$push : {friends: user2._id}}, {useFindAndModify: false}, function (err, foundList){
@@ -125,7 +125,7 @@ function createFriends(users) {
 async function main() {
   dropDB();
   let users = await createUsers();
-  createFriends(users);
+  createFriends();
   fs.writeFileSync(__dirname + "/userinfo.txt", util.inspect(usersForWriting));
 
 }

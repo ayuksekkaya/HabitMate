@@ -1,4 +1,12 @@
-let coordinates = [0, 0] //placeholder
+let coordinates = [0, 0]; //placeholder
+
+$.getJSON(
+  "https://ipgeolocation.abstractapi.com/v1/?api_key=840963ea2fa0448996605ba5a527c16b",
+  function (data) {
+    coordinates = [data.longitude, data.latitude];
+  }
+);
+
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYXN5dWtzZWsiLCJhIjoiY2tzMHduMnBoMDI5aDMybzMyc293aHRieCJ9.PvJ7r4WU6mSZZnooLxvO1Q";
 var map = new mapboxgl.Map({
@@ -9,22 +17,15 @@ var map = new mapboxgl.Map({
 });
 
 // Add controllers
-map.addControl(new mapboxgl.NavigationControl());
 map.addControl(
   new MapboxGeocoder({
   accessToken: mapboxgl.accessToken,
   marker: false,
   mapboxgl: mapboxgl
   }),
-  
   );
+  map.addControl(new mapboxgl.NavigationControl());
 
-$.getJSON(
-  "https://ipgeolocation.abstractapi.com/v1/?api_key=840963ea2fa0448996605ba5a527c16b",
-  function (data) {
-    coordinates = [data.longitude, data.latitude];
-  }
-);
 
 
 

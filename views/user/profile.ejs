@@ -1,5 +1,5 @@
 
-<%- include("../partials/header") -%>
+<%- include("../partials/header", {user: currentUser}) -%>
 
 <h1>Profile Page</h1>
 
@@ -7,10 +7,12 @@
 <p> <%= currentUser.username %></p>
     <% if (currentUser.friends.length > 0) { %>
         <h3>User friends</h3>
+        <% currentUser.friends.forEach(user => { %>
         <div>
-            <div> <%= currentUser.friends[0].username %> <div>
-            <div> <a href="/user/<%=currentUser.friends[0].id%>/send/messages">Message</a></div>
+            <div> <%= user.username %> <div>
+            <div> <a href="/user/<%=user.id%>/send/messages">Message</a></div>
         </div>
+    <% }) %>
     <% } %>
 
 <p> <%= currentUser.activities %> </p>

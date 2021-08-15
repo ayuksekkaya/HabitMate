@@ -1,16 +1,43 @@
-<h1>
-    SignUp Page
-</h1>
-<form action="/api/signup" method="POST">
-    <label for="name">Name</label>
-    <input type="text" placeholder="Name" id="fname" name="name">
-    <label for="username">UserName</label>
-    <input type="text" id="username" name="username">
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password">
-    <button>Submit</button>
-</form>
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/login">login</a></li>
-</ul>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/css/login.css">
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <div id="login">
+        <h3 class="text-center text-white pt-5">Signup Form</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box2" class="col-md-12">
+                        <form id="login-form2" class="form" action="/api/signup" method="post">
+                            <h3 class="text-center text-info">Signup</h3>
+                            <div class="form-group">
+                                <label for="name" class="text-info">Name:</label><br>
+                                <input type="text" name="name" id="fname" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Username:</label><br>
+                                <input type="text" name="username" id="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="zipcode" class="text-info">Zipcode</label><br>
+                                <input type="text" name="zipcode" id="zipcode" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="password" id="password" class="form-control">
+                            </div>
+                            <div id="register-link2" class="text-right">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Signup">
+                                <a href="/login" class="text-info">Already Signed Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

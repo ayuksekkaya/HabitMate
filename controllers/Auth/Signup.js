@@ -11,6 +11,7 @@ console.log(req.body)
 User.register( new User({
     username: req.body.username,
     name: req.body.name,
+    zipcode: req.body.zipcode
 // eslint-disable-next-line no-unused-vars
 }), req.body.password, function(err, user){
     
@@ -20,7 +21,8 @@ User.register( new User({
     }
 
     passport.authenticate("local")(req,res,function(){
-        res.redirect("/login");
+        // res.redirect("/login");
+        res.redirect("/user/" + req.user.id + "/profile");
     })    
 })
 

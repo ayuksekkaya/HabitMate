@@ -44,7 +44,7 @@ app.use('/map', MapRoute);
 
 
 app.get("/", (req,res) =>{
-    res.render("home");
+    res.render("home", {user: req.user});
 })
 
 app.get("/userprofile" ,isLoggedIn, (req,res) =>{

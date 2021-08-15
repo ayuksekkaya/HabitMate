@@ -44,7 +44,7 @@ const UserMethods = {
           console.log(err);
           res.render('/error')
         } else {
-          res.render("user/searchresults", {results: users});
+          res.render("user/searchresults", {user: req.user, results: users});
         }
       }
     );

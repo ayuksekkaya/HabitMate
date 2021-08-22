@@ -19,6 +19,10 @@ router.get('/:id/messages', User.getMessages);
 router.get('/:id/send/messages', User.messageScreen)
 router.post('/send/messages', User.sendMessage);
 
+router.get('/habit', isLoggedIn, User.getHabitPage);
+router.post('/createHabit', isLoggedIn, User.createHabit);
+
+
 function isLoggedIn(req,res,next) {
     if(req.isAuthenticated()){
         return next();

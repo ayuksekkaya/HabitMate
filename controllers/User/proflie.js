@@ -106,7 +106,16 @@ const UserMethods = {
         res.render('user/messages', {messages: foundMessages});
       }
     })
-  }
+  },
+
+  getHabitPage: async function(req, res) {
+    let user = req.user.id
+    res.render('user/createHabit', {user: user});
+  },
+
+  createHabit: function(req, res) {
+    res.send("<h1>Okay</h1>");
+  } 
 };
 
 module.exports = UserMethods;

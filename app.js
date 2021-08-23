@@ -16,7 +16,7 @@ const User = require('./Models/user');
 
 
 // mongoose.connect("mongodb://localhost/auth_demo", { useNewUrlParser: true , useUnifiedTopology: true });
-mongoose.connect("mongodb+srv://admin-ali:123test@cluster0.27dpj.mongodb.net/habitmate?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://admin-ali:" + process.env.ADMIN_PASSWORD + "@cluster0.27dpj.mongodb.net/habitmate?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true})
 app.set('view engine', 'ejs');
 // eslint-disable-next-line no-undef
 app.use(express.static(__dirname + "/public"));

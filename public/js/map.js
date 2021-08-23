@@ -1,12 +1,7 @@
 let coordinates = [0, 0]; //placeholder
-console.log("here");
 $.getJSON(
   "https://api.ipgeolocation.io/ipgeo?apiKey=dbdb849ba3e34c6bb6536bead4801a85",
   function (data) {
-    console.log(data);
-    if (!data) {
-      console.log("not found");
-    }
     coordinates = [data.longitude, data.latitude];
   }
 );
@@ -34,9 +29,8 @@ map.addControl(
 
 
 async function getStores() {
-  let locations = await fetch("/map/getAddress");
+  let locations = await fetch("map/getAddress");
   locations = await locations.json();
-  console.log(locations);
 
   const data = locations.data.map((location) => {
     

@@ -17,7 +17,7 @@ User.register( new User({
     
     if (err) {
         console.log(err);
-        res.render("signup");
+        res.redirect("/signup");
     }
 
     passport.authenticate("local")(req,res,function(){

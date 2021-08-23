@@ -1,7 +1,6 @@
 let coordinates = [0, 0]; //placeholder
-
 $.getJSON(
-  "https://ipgeolocation.abstractapi.com/v1/?api_key=840963ea2fa0448996605ba5a527c16b",
+  "https://api.ipgeolocation.io/ipgeo?apiKey=dbdb849ba3e34c6bb6536bead4801a85",
   function (data) {
     coordinates = [data.longitude, data.latitude];
   }

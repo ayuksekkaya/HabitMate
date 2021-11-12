@@ -26,6 +26,7 @@ function dropDB() {
             console.log(err);
           } else {
             console.log("DB dropped sucessfully");
+            console.log("Edited this line with github");
           }
         });
       } else {
